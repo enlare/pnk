@@ -1,0 +1,318 @@
+/* 
+    Created on : 04.07.2014, 22:37:47
+    Author     : linn.coffeein@gmail.com
+*/
+html,
+body {
+    height: 100%;
+}
+html {
+    position: relative;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:#ffffff;
+    font-size: 16px;
+}
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('fonts/glyphicons-halflings-regular.eot');
+    src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+        url('fonts/glyphicons-halflings-regular.woff') format('woff'),
+        url('fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+        url('fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+}
+.wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -30px;
+}
+.wrap-main {
+    padding-bottom: 10px;
+}
+
+/*#push,
+.footer {
+    height: 370px;
+}
+.footer {
+    width: 100%;
+    color: #fff;
+    font-size: 12px;
+    height:30px;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif
+}*/
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    /*padding: 0;*/
+    outline: 1px solid red;
+    padding: 0 40px;
+}
+.padding-0-40{
+    padding: 0 40px;
+}
+.navbar-toggle{
+    z-index: 45;
+}
+
+.logo-text{
+    font-family: 'Franklin Gothic Demi Cond', arial;
+    font-size: 15px;
+    color: #010101;
+    line-height: 18px;
+    margin: 50px 0 0 0;
+}
+.no-padding{
+    padding: 0;
+}
+.kurs{
+    font-size: 10px;
+    line-height: 13px;
+    position: absolute;
+    outline: 1px solid red;
+    position: absolute;
+    top: 55px;
+    right: 39px;
+}
+.kurs-name{
+    text-transform: uppercase;
+    font-size: 10px;
+    /*width: 30px;*/
+}
+.kurs-cell{
+    width: auto;
+    padding: 0 15px;
+    margin-top: 2px;
+}
+.kurs-price{
+    font-size: 10px;
+}
+.kurs-bordered-cell{
+    border-right: 2px solid #000000;
+    /*width: 60px;*/
+    padding: 2px 23px 0 0;
+}
+.col-custom-menu{
+    height: 34px;
+    padding: 0 0px 33px 0px;
+    border-bottom: 10px solid transparent;
+}
+.col-custom-menu:hover{
+    border-bottom: 10px solid #c12e4b;
+}
+.navbar-nav > li > a, .navbar-nav > li > a:hover{
+    font-size: 16px;
+    /*TODO font*/
+    text-transform: uppercase;
+    padding: 0 12px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+.navbar-collapse{
+    margin: 6px 0 0px 0;
+}
+
+.header{
+    position: relative;
+    z-index: 777;
+}
+.header-phone, .header-phone:hover{
+    display: block;
+    color: #181818;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 47px 0 0 0;
+    font-weight: bold;
+}
+.icons-wrapper{
+    margin: -10px 0 0 0;
+    background: url(img/bg1.png) 100% 100% no-repeat;
+    background-size: cover;
+    height: 488px;
+    max-width: 1200px;
+    color: #ffffff;
+}
+/*.icon-wrapper{
+    margin: 0 auto;
+    float:left;
+}*/
+.icon{
+    margin: 0 auto;
+}
+.col-logo-wrapper{
+    padding: 0;
+}
+.logo{
+    margin: 25px 10px 0 15px;
+}
+.icon{
+    background: url(img/icons.png) 0 0 no-repeat;
+    width: 163px;
+    height: 163px;
+}
+.icon-audit{
+    background-position: -170px 0;
+}
+.icon-ur{
+    background-position: -342px 0;
+}
+.icon-tam{
+    background-position: 0 -163px;
+}
+.icon-expert{
+    background-position: -170px -163px;
+}
+.icon-ved{
+    background-position: -342px -163px;
+}
+.icon-row{
+    margin: 35px 0 0 0;
+}
+.icon-text{
+    font-size: 24px;
+    margin: 3px 0 0 0;
+    color: #ffffff;
+}
+.news-slider-wrapper{
+    max-width: 990px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.news-slider{
+    list-style: none;
+    width: 999999999999px;
+    padding: 0;
+    -webkit-padding-start: 0;
+    position: relative;
+}
+
+.news-item{
+
+}
+.carousel-wrapper{
+    position: relative;
+}
+.control{
+    top: 50%;
+    position: absolute;
+    display: inline-block;
+    background: url(img/controls.png) 0 0 no-repeat;
+    width: 62px;
+    height: 62px;
+}
+
+.prev {
+    background-position: 0 -62px;
+    left: 0px;
+}
+.next{
+    right: 0px;
+}
+.news-header{
+    font-size: 36px;
+    color: #c02947;
+    margin: 70px 0 50px 0;
+}
+.thumb-img{
+    margin: 0 auto;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+
+}
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px)
+and (orientation : lanscape) {
+
+}
+@media only screen
+and (min-width : 320px)
+and (max-width : 568px)
+{
+
+}
+
+
+@media only screen
+and (min-width : 320px)
+and (max-width : 568px)
+and (orientation : portrait) 
+{
+
+
+}
+@media only screen
+and (min-width : 320px)
+and (max-width : 568px)
+and (orientation : lanscape){
+
+
+}
+
+@media only screen
+and (min-width : 480px)
+and (max-width : 640px)
+and (orientation : lanscape){
+
+}
+@media (min-width: 600px) and (max-width: 800px) {
+
+}
+@media (min-width: 600px) and (max-width: 800px) 
+and (orientation:portrait){
+
+}
+@media (min-width: 600px) and (max-width: 800px) 
+and (orientation:landscape){
+
+}
+
+@media (max-width: 767px)  {
+
+
+    .container{
+        padding: 0 20px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : portrait) { /* STYLES GO HERE */ 
+
+
+
+}
+@media (min-width: 768px) and (max-width: 1024px) 
+and (orientation:landscape){
+
+}
+
+
+@media (min-width: 992px) {
+
+
+
+}
