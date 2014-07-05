@@ -22,6 +22,37 @@ body {
         url('fonts/glyphicons-halflings-regular.ttf') format('truetype'),
         url('fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
+@font-face {
+    font-family: 'myriad_regular';
+    src: url('fonts/myriad_regular.eot');
+    src:  
+        url('fonts/myriad_regular.woff') format('woff'), 
+        url('fonts/myriad_regular.ttf') format('truetype'), 
+        url('fonts/myriad_regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyriadPro-Cond';
+    src: url('fonts/MyriadPro-Cond.eot');
+    src:
+        url('fonts/MyriadPro-Cond.woff') format('woff'),
+        url('fonts/MyriadPro-Cond.ttf') format('truetype'), 
+        url('fonts/MyriadPro-Cond.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Conv_MyriadPro-Bold';
+    src: url('fonts/Conv_MyriadPro-Bold.eot');
+    src: local('☺'), url('fonts/Conv_MyriadPro-Bold.woff') format('woff'),
+        url('fonts/Conv_MyriadPro-Bold.ttf') format('truetype'),
+        url('fonts/Conv_MyriadPro-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
 hr {
     margin-top: 10px;
@@ -56,7 +87,7 @@ hr {
     margin: 0 auto;
     position: relative;
     /*padding: 0;*/
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
     padding: 0 40px;
 }
 .padding-0-40{
@@ -80,7 +111,7 @@ hr {
     font-size: 10px;
     line-height: 13px;
     position: absolute;
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
     position: absolute;
     top: 55px;
     right: 39px;
@@ -107,22 +138,27 @@ hr {
     height: 34px;
     padding: 0 0px 33px 0px;
     border-bottom: 10px solid transparent;
+    font-family: 'MyriadPro-Cond';
 }
 .col-custom-menu:hover{
     border-bottom: 10px solid #c12e4b;
 }
 .navbar-nav > li > a, .navbar-nav > li > a:hover{
-    font-size: 16px;
+    font-size: 18px;
     /*TODO font*/
     text-transform: uppercase;
     padding: 0 12px;
     height: 30px;
-    line-height: 30px;
+    line-height: 33px;
     display: inline-block;
     text-decoration: none;
 }
+.blue-href,.blue-href:hover{
+    background: #4998ba;
+    color: #ffffff;
+}
 .navbar-collapse{
-    margin: 6px 0 0px 0;
+    margin: -3px 0 0px 0;
 }
 
 .header{
@@ -137,6 +173,7 @@ hr {
     margin: 47px 0 0 0;
     font-weight: bold;
     padding: 0 25px 0 0;
+    font-family: 'Conv_MyriadPro-Bold';
 }
 .icons-wrapper{
     margin: -10px 0 0 0;
@@ -186,6 +223,7 @@ hr {
     font-size: 24px;
     margin: 3px 0 0 0;
     color: #ffffff;
+    font-family: 'MyriadPro-Cond';
 }
 .news-slider-wrapper{
     max-width: 900px;
@@ -220,16 +258,17 @@ hr {
     background: url(img/controls.png) 0 0 no-repeat;
     width: 62px;
     height: 62px;
+    margin-top: 16%;
     /*margin: 50% 0 0 0;*/
 }
 .prev {
     background-position: 0 -62px;
     left: 0px;
-    margin: 0 30px 0 0;
+    margin-right: 30px;
 }
 .next{
     right: 0px;
-    margin: 0 0 0 30px;
+    margin-left: 30px;
 }
 
 
@@ -237,6 +276,8 @@ hr {
     font-size: 36px;
     color: #c02947;
     margin: 70px 0 50px 0;
+    font-family: 'MyriadPro-Cond';
+    line-height: 36px;
 }
 .thumb-img{
     margin: 0 auto;
@@ -254,15 +295,18 @@ hr {
 .underlined{
     text-decoration: underline;
     font-size: 30px;
+    line-height: 30px;
     color: #43413d;
     display: inline-block;
-    margin: 44px 0 23px 0;
+    margin: 40px 0 20px 0;
+    font-family: 'MyriadPro-Cond';
 }
 .news-text{
     color: #43413d;
     display: inline-block;
     font-size: 16px;
     line-height: 18px;
+    font-family: 'myriad_regular';
 }
 .bg2{
     background: url(img/bg2.png) 100% 100% no-repeat;
@@ -283,6 +327,7 @@ hr {
     margin: -65px 0 0 0;
     left: 68px;
     font-size: 48px;
+    font-family: 'MyriadPro-Cond';
 }
 .about-bold-text{
     font-weight: bold;
@@ -291,6 +336,11 @@ hr {
     color: #43413d;
     font-size: 16px;
     line-height: 18px;
+    /*font-family: 'Conv_MyriadPro-Bold';*/
+    font-family: 'myriad_regular';
+}
+.about-cell-wrapper{
+    font-family: 'myriad_regular';
 }
 .about-cell-wrapper div:first-child{
     padding: 0 20px 0 0;
@@ -303,13 +353,17 @@ hr {
 }
 .mail-link,.mail-link:hover{
     text-decoration: none;
+    color: #181818;
 }
 .contact-tel, .contact-tel:hover{
-     text-decoration: none;
-     line-height: 48px;
-     font-weight: bold;
-     margin: 33px auto 20px auto;
-     display: inline-block;
+    text-decoration: none;
+    line-height: 48px;
+    font-size: 48px;
+    /*font-weight: bold;*/
+    margin: 33px auto 20px auto;
+    display: inline-block;
+    font-family: 'Conv_MyriadPro-Bold';
+    color: #181818;
 }
 .contact-wrapper{
     margin: 68px 0 70px 0;
@@ -319,6 +373,13 @@ hr {
 }
 .contact-text{
     margin: 0 0 20px 0;
+    font-family: 'myriad_regular';
+    font-size: 18px;
+    line-height: 18px;
+    color: #181818;
+}
+.about-header{
+    margin: 55px auto 0 auto;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -388,6 +449,63 @@ and (orientation:landscape){
         right: 72px;
         width: 274px;
         margin: 0;
+    }
+    .bg-text{
+        font-size: 15px;
+        left: 10px;
+    }
+    .header-phone,
+    .header-phone:hover{
+        font-size: 16px;
+    }
+
+    .control{
+        display: inline-block;
+        background: url(img/controls_small.png) 0 0 no-repeat;
+        width: 40px;
+        height: 20px;
+    }
+    .prev {
+        background-position: 0 -20px;
+        left: 0px;
+        margin: 0 10px 0 0;
+    }
+    .next{
+        right: 0px;
+        margin: 0 0 0 10px;
+    }
+    .bg2{
+        height: 300px;
+    }
+
+
+    .icon{
+        background: url(img/icons_small.png) 0 0 no-repeat;
+        width: 81px;
+        height: 81px;
+    }
+    .icon-audit{
+        background-position: -170px 0;
+    }
+    .icon-ur{
+        background-position: -342px 0;
+    }
+    .icon-tam{
+        background-position: 0 -163px;
+    }
+    .icon-expert{
+        background-position: -170px -163px;
+    }
+    .icon-ved{
+        background-position: -342px -163px;
+    }
+    .icon-row{
+        margin: 35px 0 0 0;
+    }
+    .icon-text{
+        font-size: 24px;
+        margin: 3px 0 0 0;
+        color: #ffffff;
     }
 }
 
