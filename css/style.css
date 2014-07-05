@@ -136,6 +136,7 @@ hr {
     text-decoration: none;
     margin: 47px 0 0 0;
     font-weight: bold;
+    padding: 0 25px 0 0;
 }
 .icons-wrapper{
     margin: -10px 0 0 0;
@@ -187,9 +188,11 @@ hr {
     color: #ffffff;
 }
 .news-slider-wrapper{
-    max-width: 990px;
+    max-width: 900px;
     overflow: hidden;
     margin: 0 auto;
+    /*padding: 0 95px;*/
+    width: 100%;
 }
 .news-slider{
     list-style: none;
@@ -200,27 +203,36 @@ hr {
 }
 
 .news-item{
-
+    float: left;
+    display: inline-block;
+    float: left;
+    width: 268px;
+    max-width: 268px;
+    margin: 0 48px 0 0;
 }
 .carousel-wrapper{
     position: relative;
 }
 .control{
-    top: 50%;
-    position: absolute;
+    /*top: 50%;*/
+    /*position: absolute;*/
     display: inline-block;
     background: url(img/controls.png) 0 0 no-repeat;
     width: 62px;
     height: 62px;
+    /*margin: 50% 0 0 0;*/
 }
-
 .prev {
     background-position: 0 -62px;
     left: 0px;
+    margin: 0 30px 0 0;
 }
 .next{
     right: 0px;
+    margin: 0 0 0 30px;
 }
+
+
 .news-header{
     font-size: 36px;
     color: #c02947;
@@ -229,6 +241,86 @@ hr {
 .thumb-img{
     margin: 0 auto;
 }
+.navbar-collapse{
+    /*padding: 0;*/
+}
+.news-wrapper{
+    margin: 0 0 70px 0;
+}
+.news-link,.news-link:hover{
+    text-decoration: none;
+    display: inline-block;
+}
+.underlined{
+    text-decoration: underline;
+    font-size: 30px;
+    color: #43413d;
+    display: inline-block;
+    margin: 44px 0 23px 0;
+}
+.news-text{
+    color: #43413d;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 18px;
+}
+.bg2{
+    background: url(img/bg2.png) 100% 100% no-repeat;
+    background-size: cover;
+    height: 488px;
+    max-width: 1200px;
+    color: #ffffff;
+    position: relative;
+    text-transform: uppercase;
+}
+.bg3{
+    background: url(img/bg3.png) 100% 100% no-repeat;
+}
+.bg-text{
+    position: absolute;
+    top: 50%;
+    height: 132px;
+    margin: -65px 0 0 0;
+    left: 68px;
+    font-size: 48px;
+}
+.about-bold-text{
+    font-weight: bold;
+    padding: 0;
+    margin: 40px 0 24px 0;
+    color: #43413d;
+    font-size: 16px;
+    line-height: 18px;
+}
+.about-cell-wrapper div:first-child{
+    padding: 0 20px 0 0;
+}
+.about-cell-wrapper div:last-child{
+    padding: 0  0 0 20px;
+}
+.about-wrapper{
+    margin: 0 0 55px 0;
+}
+.mail-link,.mail-link:hover{
+    text-decoration: none;
+}
+.contact-tel, .contact-tel:hover{
+     text-decoration: none;
+     line-height: 48px;
+     font-weight: bold;
+     margin: 33px auto 20px auto;
+     display: inline-block;
+}
+.contact-wrapper{
+    margin: 68px 0 70px 0;
+}
+.contact-header{
+    margin: 0 0 0 0;
+}
+.contact-text{
+    margin: 0 0 20px 0;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-width : 320px) 
@@ -289,11 +381,21 @@ and (orientation:landscape){
     .container{
         padding: 0 20px;
     }
+    .header-phone, .header-phone:hover{
+        position: absolute;
+        top: 6px;
+        right: 72px;
+        right: 72px;
+        width: 274px;
+        margin: 0;
+    }
 }
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
+    .navbar-nav{
+        /*float: right;*/
+    }
 
 }
 
@@ -313,6 +415,10 @@ and (orientation:landscape){
 
 @media (min-width: 992px) {
 
-
+    .menu-wrapper{
+        width: auto;
+        float: right;
+        margin: 0 110px 0 0;
+    }
 
 }
