@@ -373,14 +373,14 @@ hr {
     color: #181818;
 }
 .contact-tel, .contact-tel:hover{
- text-decoration: none;
-line-height: 48px;
-font-size: 48px;
-font-weight: bold;
-margin: 22px auto 10px auto;
-display: inline-block;
-font-family: 'myriad_regular';
-color: #181818;
+    text-decoration: none;
+    line-height: 48px;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 22px auto 10px auto;
+    display: inline-block;
+    font-family: 'myriad_regular';
+    color: #181818;
 }
 .contact-wrapper{
     margin: 68px 0 70px 0;
@@ -398,7 +398,7 @@ color: #181818;
 .about-header{
     margin: 55px auto 0 auto;
 }
-.bg-wrapper-container{
+.bg-wrapper-container, .about-wrapper-container{
     padding: 0 24px;
 }
 
@@ -406,19 +406,60 @@ color: #181818;
 @media only screen 
 and (min-width : 320px) 
 and (max-width : 480px) {
-
+    .underlined{
+        font-size: 20px;
+        line-height: 20px;
+        margin: 26px 0 20px 0;
+    }
 }
 @media only screen
 and (min-width : 320px)
 and (max-width : 480px)
 and (orientation : lanscape) {
+    .news-slider-wrapper{
+        max-width: 325px !important;
+    }
+    .news-item{
+        width: 154px  !important;
+        max-width: 154px  !important;
+        margin: 0 15px 0 0  !important;
+    }
+    .container{
+        outline: 1px solid red;
+    }
 
 }
 @media only screen
 and (min-width : 320px)
 and (max-width : 568px)
 {
+    .about-cell-wrapper div:first-child{
+        padding: 0;
+    }
+    .about-cell-wrapper div:last-child{
+        padding: 0;
+    }
+    .contact-wrapper {
+        margin: 28px 0 70px 0;
+    }
 
+    .contact-tel, .contact-tel:hover{
+        line-height: 28px;
+        font-size: 28px;
+        margin: 0px auto 20px auto;
+    }
+    .bg2 {
+        height: 200px;
+    }
+    .about-bold-text{
+        margin: 0px 0 20px 0;
+    }
+    .header-phone, .header-phone:hover{
+        right: 45px !important;
+        width: auto !important; 
+        margin: 0 !important;
+        font-size: 14px !important;
+    }
 }
 
 
@@ -428,6 +469,34 @@ and (max-width : 568px)
 and (orientation : portrait) 
 {
 
+    .news-container{
+        padding: 0 5px !important;
+    }
+    .news-slider-wrapper{
+        max-width: 193px;
+        height: 330px;
+    }
+    .news-item{
+        max-width: 193px;
+        width: 193px;
+    }
+    .underlined{
+        font-size: 20px;
+        line-height: 20px;
+        margin: 26px 0 20px 0;
+    }
+    .news-header{
+        margin: 27px 0 21px 0;
+    }
+    .bg2{
+        height: 200px;
+    }
+    .bg-text{
+        font-size: 22px !important;
+        line-height: 35px !important;
+        margin: -50px 0 0 0;
+    }
+
 
 }
 @media only screen
@@ -435,7 +504,23 @@ and (min-width : 320px)
 and (max-width : 568px)
 and (orientation : lanscape){
 
-
+    .news-slider-wrapper{
+        max-width: 477px;
+    }
+    .header-phone, .header-phone:hover{
+        top: 17px;
+    }
+    .news-slider-wrapper{
+        max-width: 410px !important;
+    }
+    .news-item{
+        width: 198px  !important;
+        max-width: 198px  !important;
+        margin: 0 15px 0 0  !important;
+    }
+    .container{
+        outline: 1px solid red;
+    }
 }
 
 @media only screen
@@ -471,8 +556,9 @@ and (orientation:landscape){
         margin: 0;
     }
     .bg-text{
-        font-size: 15px;
         left: 10px;
+        font-size: 22px !important;
+        line-height: 35px !important;
     }
     .header-phone,
     .header-phone:hover{
@@ -483,16 +569,16 @@ and (orientation:landscape){
         display: inline-block;
         background: url(img/controls_small.png) 0 0 no-repeat;
         width: 40px;
-        height: 20px;
+        height: 40px;
     }
     .prev {
-        background-position: 0 -20px;
+        background-position: 0 -40px;
         left: 0px;
-        margin: 0 10px 0 0;
+        margin-right: 10px;
     }
     .next{
         right: 0px;
-        margin: 0 0 0 10px;
+        margin-left: 10px;
     }
     .bg2{
         height: 300px;
@@ -501,31 +587,41 @@ and (orientation:landscape){
 
     .icon{
         background: url(img/icons_small.png) 0 0 no-repeat;
-        width: 81px;
-        height: 81px;
+        width: 65px;
+        height: 65px;
     }
     .icon-audit{
-        background-position: -170px 0;
+        background-position: -68px 0;
     }
     .icon-ur{
-        background-position: -342px 0;
+        background-position: -136px 0;
     }
     .icon-tam{
-        background-position: 0 -163px;
+        background-position: 0 -65px;
     }
     .icon-expert{
-        background-position: -170px -163px;
+        background-position: -68px -65px;
     }
     .icon-ved{
-        background-position: -342px -163px;
+        background-position: -136px -65px;
     }
     .icon-row{
         margin: 35px 0 0 0;
     }
     .icon-text{
-        font-size: 24px;
+        font-size: 16px;
+        line-height: 18px;
         margin: 3px 0 0 0;
         color: #ffffff;
+    }
+    .bg-wrapper-container{
+        padding: 0;
+    }
+    .icon-row .icon-wrapper:nth-child(2){
+        margin: 0;
+    }
+    .icons-wrapper{
+        height: 284px;
     }
 }
 
@@ -534,6 +630,27 @@ and (orientation:landscape){
     .navbar-nav{
         /*float: right;*/
     }
+    .icon-row .icon-wrapper:nth-child(2){
+        margin: 0;
+    }
+    .news-container{
+        padding: 0 20px;
+    }
+
+    .prev{
+        margin-right: 10px; 
+        background-position: 0 -40px;
+    }
+    .next{
+        margin-left: 10px;
+    }
+    .control{
+        display: inline-block;
+        background: url(img/controls_small.png) 0 0 no-repeat;
+        width: 40px;
+        height: 40px;
+    }
+
 
 }
 
@@ -541,13 +658,41 @@ and (orientation:landscape){
 and (min-width : 768px) 
 and (max-width : 1024px) 
 and (orientation : portrait) { /* STYLES GO HERE */ 
-
+    .news-slider-wrapper{
+        max-width: 577px;
+    }
+    .prev{
+        margin-right: 23px; 
+        /*background-position: 0 -40px;*/
+    }
+    .next{
+        margin-left: 23px;
+    }
+    .container{
+        padding: 0 25px;
+    }
+    .header-phone, .header-phone:hover{
+        padding: 0;
+    }
+    .navbar-collapse.collapse{
+        padding: 0;
+    }
+    .navbar-nav{
+        float: right;
+        padding: 0;
+    }
 
 
 }
 @media (min-width: 768px) and (max-width: 1024px) 
 and (orientation:landscape){
-
+    .news-slider-wrapper{
+        max-width: 830px;
+    }
+    .news-item{
+        width: 245px;
+        max-width: 245px;
+    }
 }
 
 
