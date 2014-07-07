@@ -14,14 +14,7 @@ body {
     background:#ffffff;
     font-size: 16px;
 }
-@font-face {
-    font-family: 'Glyphicons Halflings';
-    src: url('fonts/glyphicons-halflings-regular.eot');
-    src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
-        url('fonts/glyphicons-halflings-regular.woff') format('woff'),
-        url('fonts/glyphicons-halflings-regular.ttf') format('truetype'),
-        url('fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
-}
+
 @font-face {
     font-family: 'myriad_regular';
     src: url('fonts/myriad_regular.eot');
@@ -42,16 +35,6 @@ body {
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'Conv_MyriadPro-Bold';
-    src: url('fonts/Conv_MyriadPro-Bold.eot');
-    src: local('☺'), url('fonts/Conv_MyriadPro-Bold.woff') format('woff'),
-        url('fonts/Conv_MyriadPro-Bold.ttf') format('truetype'),
-        url('fonts/Conv_MyriadPro-Bold.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 
 hr {
@@ -103,6 +86,7 @@ hr {
     color: #010101;
     line-height: 18px;
     margin: 50px 0 0 0;
+    text-transform: uppercase;
 }
 .no-padding{
     padding: 0;
@@ -123,7 +107,7 @@ hr {
 }
 .kurs-cell{
     width: auto;
-    padding: 0 15px;
+    padding: 3px 15px;
     margin-top: 2px;
 }
 .kurs-price{
