@@ -20,4 +20,17 @@ $(document).ready(function() {
             items: 1
         }
     });
+
+
+//    $('.modal').modal({
+//        backdrop: true,
+//        keyboard: true
+//    }).css({
+//        'width': function() {
+//            return ($(document).width() * .9) + 'px';
+//        },
+//        'margin-left': function() {
+//            return -($(this).width() / 2);
+//        }
+//    });
 });

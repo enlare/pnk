@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
         <title>PNK</title>
@@ -41,7 +41,6 @@
                         консультация
                     </div>
                     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                        <!--<span class="sr-only">Toggle navigation</span>-->
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -70,12 +69,20 @@
                                 </a>
                             </li>
                             <li class="col-custom-menu">
-                                <a href="#" class="blue-href">
+                                <a href="#egrul-modal" class="blue-href" data-toggle="modal">
                                     выписка ЕГРЮЛ
                                 </a>
                             </li>
                         </ul>
                     </nav>
+                </div>
+                <div class="lang-wrapper clearfix">
+                    <a href="#" class="lang-link pull-left en-lang-link active-lang">
+                        <span class="icons en-lang"></span>
+                    </a>
+                    <a href="#" class="lang-link pull-left">
+                        <span class="icons ru-lang"></span>
+                    </a>
                 </div>
                 <div class="kurs">
                     <div class="text-center">Курсы валют 02.07.14</div>
@@ -95,44 +102,44 @@
         <div class="container bg-wrapper-container">
             <div class="clearfix icons-wrapper">
                 <div class="clearfix icon-row col-lg-10 col-lg-offset-1">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 icon-wrapper">
+                    <a href="#buh-modal" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 icon-wrapper" data-toggle="modal">
                         <div class="icon"></div>
                         <div class="icon-text text-center">
                             Бухгалтерские услуги
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 icon-wrapper">
+                    </a>
+                    <a href="#audit-modal" class="col-lg-3 col-md-4 col-sm-4 col-xs-4 icon-wrapper" data-toggle="modal">
                         <div class="icon icon-audit"></div>
                         <div class="icon-text text-center">
                             Аудиторские услуги
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 icon-wrapper">
+                    </a>
+                    <a href="#ur-modal" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 icon-wrapper" data-toggle="modal">
                         <div class="icon icon-ur"></div>
                         <div class="icon-text text-center">
                             Юридические услуги
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="clearfix icon-row col-lg-10 col-lg-offset-1">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 icon-wrapper">
+                    <a href="#tam-modal" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 icon-wrapper" data-toggle="modal">
                         <div class="icon icon-tam"></div>
                         <div class="icon-text text-center">
                             Таможенное оформление
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 icon-wrapper">
+                    </a>
+                    <a href="#expert-modal" class="col-lg-3 col-md-4 col-sm-4 col-xs-4 icon-wrapper" data-toggle="modal">
                         <div class="icon icon-expert"></div>
                         <div class="icon-text text-center">
                             Экспертизы
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 icon-wrapper">
+                    </a>
+                    <a href="#ved-modal" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 icon-wrapper" data-toggle="modal">
                         <div class="icon icon-ved"></div>
                         <div class="icon-text text-center">
                             ВЭД
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -254,6 +261,173 @@
                 <div class="text-center contact-text">ICQ консультация: 298-297-114</div>
                 <div class="text-center contact-text">
                     email: <a href="mailto:info@pnk-group.ru" class="mail-link">info@pnk-group.ru</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade custom-modal" id="expert-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog custom-modal-dialog">
+                <div class="modal-content custom-modal-content">
+                    <button type="button" class="close " data-dismiss="modal"></button>
+                    <div class="modal-body custom-modal-body">
+                        <div class="custom-modal-header">
+                            Экспертизы
+                        </div>
+                        <div class="modal-links-wrapper">
+                            <div class="modal-bold"> Бухгалтерская экспертиза</div>
+                            <ul class="links">
+                                <li>
+                                    <a href="#" class="expert-link">Налоговая экспертиза</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="expert-link">Финансово-аналитическая экспертиза</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="expert-link">Финансово-экономическая экспертиза</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="expert-link">Финансово-кредитная экспертиза</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="clearfix uppercase">
+                            Бухгалтерская экспертиза
+                        </div>
+                        <div class="clearfix">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding">
+                                <div class="modal-row text-justify">
+                                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать 
+                                    несколько абзацев более менее осмысленного текста рыбы на русском языке,
+                                    а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                </div>
+                                <div class="modal-row text-justify">
+                                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать 
+                                    несколько абзацев более менее осмысленного текста рыбы на русском языке,
+                                    а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                </div>
+                                <div class="modal-row text-justify modal-bordered-row">
+                                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать 
+                                    несколько абзацев более менее осмысленного текста рыбы на русском языке, 
+                                    а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                </div>
+                                <div class="modal-row text-justify">
+                                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать 
+                                    несколько абзацев более менее осмысленного текста рыбы на русском языке,
+                                    а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                </div>
+                                <div class="modal-row text-justify modal-bordered-row">
+                                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать 
+                                    несколько абзацев более менее осмысленного текста рыбы на русском языке, 
+                                    а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                </div>
+                            </div>
+                            <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12  no-padding">
+                                <div class="dashed-border">
+                                    <div class="item-margin-row">
+                                        <div class="red-text">от <span class="red-numbers">20&thinsp;000</span>&thinsp;руб.</div>
+                                        <div>Стоимость проведения судебной<br />
+                                            бухгалтерской экспертизы
+                                        </div>
+                                    </div>
+                                    <div class="red-text">от <span class="red-numbers">8</span>&thinsp;дней</div>
+                                    <div>Срок проведения</div>
+                                </div>
+
+                                <div class="dashed-border">
+                                    <div class="red-text">от <span class="red-numbers">4&thinsp;000</span>&thinsp;руб.</div>
+                                    <div>Стоимость иссследований по вопросам<br />
+                                        бухгалтерского учёта зависит от сути проблемы
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="modal fade custom-modal" id="audit-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog custom-modal-dialog">
+                <div class="modal-content custom-modal-content">
+                    <button type="button" class="close " data-dismiss="modal"></button>
+                    <div class="modal-body custom-modal-body">
+                        <div class="custom-modal-header">
+                            Аудиторские услуги
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade custom-modal" id="ur-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog custom-modal-dialog">
+                <div class="modal-content custom-modal-content">
+                    <button type="button" class="close " data-dismiss="modal"></button>
+                    <div class="modal-body custom-modal-body">
+                        <div class="custom-modal-header">
+                            Юридические услуги
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade custom-modal" id="tam-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog custom-modal-dialog">
+                <div class="modal-content custom-modal-content">
+                    <button type="button" class="close " data-dismiss="modal"></button>
+                    <div class="modal-body custom-modal-body">
+                        <div class="custom-modal-header">
+                            Таможенное оформление
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade custom-modal" id="buh-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog custom-modal-dialog">
+                <div class="modal-content custom-modal-content">
+                    <button type="button" class="close " data-dismiss="modal"></button>
+                    <div class="modal-body custom-modal-body">
+                        <div class="custom-modal-header">
+                            Бухгалетерские услуги
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade custom-modal" id="ved-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog custom-modal-dialog">
+                <div class="modal-content custom-modal-content">
+                    <button type="button" class="close " data-dismiss="modal"></button>
+                    <div class="modal-body custom-modal-body">
+                        <div class="custom-modal-header">
+                            ВЭД
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade custom-modal" id="egrul-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog custom-modal-dialog">
+                <div class="modal-content custom-modal-content">
+                    <button type="button" class="close " data-dismiss="modal"></button>
+                    <div class="modal-body custom-modal-body">
+                        <div class="custom-modal-header">
+                            Выписка ЕГРЮЛ,завереная ИФНС
+                        </div>
+                        <div class="clearfix">
+                            <div class="modal-row text-justify">
+                                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать 
+                                несколько абзацев более менее осмысленного текста рыбы на русском языке,
+                                а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
