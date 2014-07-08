@@ -423,9 +423,9 @@ hr {
 .lang-link:hover, .active-lang{
     border-bottom: 4px solid #c12e4b;
 }
-.active-lang:hover{
+/*.active-lang:hover{
     border-bottom: 4px solid transparent;
-}
+}*/
 .icons{
     background: url(img/lang.png) 0 0 no-repeat;
     width: 20px;
