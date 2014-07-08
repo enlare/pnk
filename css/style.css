@@ -161,7 +161,7 @@ hr {
     font-family: 'myriad_regular';
 }
 .icons-wrapper{
-    margin: -10px 0 0 0;
+    margin: -16px 0 0 0;
     background: url(img/bg1.png) 100% 100% no-repeat;
     background-size: cover;
     height: 488px;
@@ -173,7 +173,18 @@ hr {
     /*float: left;*/
     /*width: auto;*/
     padding: 0;
-    text-decoration: none;
+    
+}
+.icon-wrapper:hover .icon{
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    cursor: pointer;
+}
+.icon-wrapper:hover .icon-text{
+    text-decoration: underline;
 }
 .icon{
     margin: 0 auto;
@@ -295,6 +306,9 @@ hr {
     margin: 46px 0 20px 0;
     font-family: 'MyriadPro-Cond';
 }
+.underlined:hover{
+    text-decoration:none;
+}
 .news-text{
     color: #43413d;
     display: block;
@@ -408,6 +422,9 @@ hr {
 }
 .lang-link:hover, .active-lang{
     border-bottom: 4px solid #c12e4b;
+}
+.active-lang:hover{
+    border-bottom: 4px solid transparent;
 }
 .icons{
     background: url(img/lang.png) 0 0 no-repeat;
